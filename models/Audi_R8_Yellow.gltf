@@ -1,0 +1,451 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.3.48",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                5
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Audi_R8_Low_Poly"
+        },
+        {
+            "mesh" : 1,
+            "name" : "Audi_R8_Low_Tyre_FL"
+        },
+        {
+            "mesh" : 2,
+            "name" : "Audi_R8_Low_Tyre_FR"
+        },
+        {
+            "mesh" : 3,
+            "name" : "Audi_R8_Low_Tyre_RL",
+            "rotation" : [
+                -0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "scale" : [
+                2.5399999618530273,
+                2.5399999618530273,
+                2.5399999618530273
+            ],
+            "translation" : [
+                78.74298095703125,
+                -138.4373321533203,
+                -32.29404067993164
+            ]
+        },
+        {
+            "mesh" : 4,
+            "name" : "Audi_R8_Low_Tyre_RR",
+            "rotation" : [
+                -0.7071067690849304,
+                0,
+                0,
+                0.7071068286895752
+            ],
+            "scale" : [
+                2.5399999618530273,
+                2.5399999618530273,
+                2.5399999618530273
+            ],
+            "translation" : [
+                -78.74384307861328,
+                -138.4373321533203,
+                -32.29404067993164
+            ]
+        },
+        {
+            "children" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "name" : "Audi_R8_Yellow",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.09999999403953552,
+                0.09999999403953552,
+                0.09999999403953552
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "audi_r8_yellow",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5527864098548889
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Mesh.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 12,
+                        "NORMAL" : 13,
+                        "TEXCOORD_0" : 14
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Mesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 15,
+                        "NORMAL" : 16,
+                        "TEXCOORD_0" : 17
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Audi_R8_Texture_(Yellow)",
+            "uri" : "Audi_R8_Texture_Yellow.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1818,
+            "max" : [
+                100.78524780273438,
+                216.39126586914062,
+                -13.686885833740234
+            ],
+            "min" : [
+                -100.78524780273438,
+                -216.39222717285156,
+                -122.51484680175781
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1818,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1818,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 1818,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 656,
+            "max" : [
+                95.97589111328125,
+                149.9763946533203,
+                0.8437241911888123
+            ],
+            "min" : [
+                61.51007080078125,
+                83.70087432861328,
+                -65.43177032470703
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 656,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 656,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 960,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 654,
+            "max" : [
+                -61.51094055175781,
+                149.97640991210938,
+                0.8437241911888123
+            ],
+            "min" : [
+                -95.97677612304688,
+                83.70087432861328,
+                -65.43177032470703
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 654,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 654,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 960,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5126,
+            "count" : 656,
+            "max" : [
+                6.784614562988281,
+                13.046357154846191,
+                13.04636001586914
+            ],
+            "min" : [
+                -6.78460693359375,
+                -13.046358108520508,
+                -13.046367645263672
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 656,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5126,
+            "count" : 656,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 15,
+            "componentType" : 5126,
+            "count" : 656,
+            "max" : [
+                6.784612655639648,
+                13.046357154846191,
+                13.04636001586914
+            ],
+            "min" : [
+                -6.784612655639648,
+                -13.046358108520508,
+                -13.046367645263672
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 16,
+            "componentType" : 5126,
+            "count" : 656,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 17,
+            "componentType" : 5126,
+            "count" : 656,
+            "type" : "VEC2"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 21816,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 21816,
+            "byteOffset" : 21816
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 14544,
+            "byteOffset" : 43632
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3636,
+            "byteOffset" : 58176
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7872,
+            "byteOffset" : 61812
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7872,
+            "byteOffset" : 69684
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5248,
+            "byteOffset" : 77556
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1920,
+            "byteOffset" : 82804
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7848,
+            "byteOffset" : 84724
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7848,
+            "byteOffset" : 92572
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5232,
+            "byteOffset" : 100420
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1920,
+            "byteOffset" : 105652
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7872,
+            "byteOffset" : 107572
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7872,
+            "byteOffset" : 115444
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5248,
+            "byteOffset" : 123316
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7872,
+            "byteOffset" : 128564
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7872,
+            "byteOffset" : 136436
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5248,
+            "byteOffset" : 144308
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 149556,
+            "uri" : "Audi_R8_Yellow.bin"
+        }
+    ]
+}

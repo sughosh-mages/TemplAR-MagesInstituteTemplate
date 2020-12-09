@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mages Institute of Excellence</title>
+  <meta author="Cindy">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="css/style.css">
+  <script src='js/aframe-master.min.js'></script>
+  <script src='js/aframe-ar-nft.js'></script>
+  <script src="js/mages-institute.js"></script>
+  <!-- <script src='js/aframe-extras.min.js'></script> -->
+  <script
+  src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+
+
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+
+  <div class="arjs-loader">
+    <div class="arjs-loader-spinner"></div>
+  </div>
+  <div class="loader" style="display: none;" id="loadingDiv">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <div class="top-buttons">
+    <button class="play-video-button" id="playButton"></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="info-button" id="infoButton"></button>
+  </div>
+
+  <div class="bottom-buttons">
+    <button class="category-1-button" id="tecButton">GAME TECHNOLOGY</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="category-2-button" id="artButton">GAME ART</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="category-3-button" id="aniButton">ANIMATION</button>
+
+  </div>
+
+  <a-scene vr-mode-ui='enabled: false;' renderer="logarithmicDepthBuffer: true;" embedded
+    arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+
+
+
+    <a-assets>
+      <img id="banner" src="textures/white-marker/mages-banner.png">
+      <!-- <a-asset-item id="model_1" src="models/Char/Mixamo_char_46.gltf"></a-asset-item> -->
+      <a-asset-item id="model_1" src="models/Audi_R8_Red.gltf"></a-asset-item>
+      <a-asset-item id="model_2" src="models/Audi_R8_Yellow.gltf"></a-asset-item>
+      <a-asset-item id="model_3" src="models/Audi_R8_Yellow.gltf"></a-asset-item>
+      <a-asset-item id="desk" src="models/Audi_R8_Red.gltf"></a-asset-item>
+      <a-asset-item id="chair" src="models/Audi_R8_Red.gltf"></a-asset-item>
+
+      <video src="videos/vid1.m4v" preload="auto" id="vid_1" response-type="arraybuffer" loop crossorigin
+        webkit-playsinline playsinline>
+      </video>
+      <video src="videos/vid2.m4v" preload="auto" id="vid_2" response-type="arraybuffer" loop crossorigin
+        webkit-playsinline playsinline>
+      </video>
+      <video src="videos/vid3.m4v" preload="auto" id="vid_3" response-type="arraybuffer" loop crossorigin
+        webkit-playsinline playsinline>
+      </video>
+    </a-assets>
+
+    <a-nft id="nft" videohandler="srcVid: #vid_1" type='nft'
+      url='MagesStudioGit-ArJs-Templates/ARjs-Templates/template-mages/textures/black-marker/mages-banner' smooth='true'
+      smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
+
+      <a-video id="avideo" width='180' height='120' scale="0.5 0.5 0.5" position='50 0.1 -80' rotation='270 0 0'>
+      </a-video>
+      <a-entity id='model' scale="1 1 1" position="120 0 -80" rotation="0 0 0" animation-mixer="loop: repeat">
+
+        <a-entity gltf-model='#model_1' id='emodel_1'>
+        </a-entity>
+
+        <a-entity gltf-model='#model_2' id='emodel_2' visible="false">
+        </a-entity>
+
+        <a-entity gltf-model='#model_3' id='emodel_3' visible="false">
+        </a-entity>
+      </a-entity>
+
+
+      <a-plane src="#banner" id="plane-banner" width="600" height="200" scale="0.2 0.2 0.2" position="80 0 -140"
+        rotation="-90 0 0">
+      </a-plane>
+
+
+    </a-nft>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+</html>
+
+
+<!--
+animation="property: rotation; to: 0 360 0; loop: true; dur: 30000; easing: linear;"
+
+
+ <a-plane src="textures/mages-banner.png" id="banner" class="intersectable" width="1" height="0.4"
+                position="-2.4 0.3 0.8" rotation="270 0 0" transparent=True>
+          </a-plane>
+          <a-entity
+            gltf-model='#model_1'
+            id='model'
+            scale="5 5 5"
+            position="500 0 -200"
+            rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 30000; easing: linear;"
+            >
+          </a-entity>
+
+          <a-entity
+            gltf-model='#desk'
+            id='desk-model'
+            scale="5 5 5"
+            position="0 -100 100"
+            rotation="0 0 0"
+            >
+          </a-entity>
+
+          <a-entity
+            gltf-model='#chair'
+            id='chair-model'
+            scale="5 5 5"
+            position="0 -100 150"
+            rotation="0 0 0"
+            >
+          </a-entity>
+
+          
+ <a-plane src="#banner" id="plane-banner"
+          emitevents="true" button class="intersectable"
+          width="1537" height="573" scale="0.2 0.2 0.2" 
+          position="0 0 -400" rotation="0 0 0">
+        </a-plane> 
+
+<a-plane src="#banner" id="plane-banner" open-link
+          width="1537" height="573" scale="0.02 0.02 0.02" 
+          position="-1 0.5 -40" rotation="0 0 0">
+          <a-animation attribute="rotation"
+                 dur="3000"
+                 fill="forwards"
+                 to="0 360 0"
+                 direction="alternate"
+                 begin="click"></a-animation>
+        </a-plane> 
+
+
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse"
+            raycaster="objects: .intersectable; useWorldCoordinates: true;">
+        </a-entity>
+        
+              <button class="category-4-button">Entertainment Design</button>
+      <button class="category-5-button">Communication Design</button>
+  -->
